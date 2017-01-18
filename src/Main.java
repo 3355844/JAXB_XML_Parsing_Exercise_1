@@ -13,7 +13,7 @@ public class Main {
             JAXBContext jaxbContext = JAXBContext.newInstance(Trains.class);
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
             Trains trains = (Trains) unmarshaller.unmarshal(file);
-            sout
+            System.out.println(trains.toString());
         } catch (JAXBException e) {
             e.printStackTrace();
         }
