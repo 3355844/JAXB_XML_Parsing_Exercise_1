@@ -7,11 +7,19 @@ import java.util.ArrayList;
  */
 @XmlRootElement(name = "trains")
 public class Trains {
-    @XmlElement(name = "train")
-    private ArrayList<Train> trains;
+
+    private ArrayList<Train> trains = new ArrayList<>();
 
     public void add(Train train) {
         trains.add(train);
+    }
+    @XmlElement(name = "train")
+    public ArrayList<Train> getTrains() {
+        return trains;
+    }
+
+    public void setTrains(ArrayList<Train> trains) {
+        this.trains = trains;
     }
 
     @Override

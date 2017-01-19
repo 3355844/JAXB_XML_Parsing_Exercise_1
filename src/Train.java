@@ -9,7 +9,7 @@ import java.util.Date;
  * Created by 33558 on 18.01.2017.
  */
 @XmlRootElement(name = "train")
-@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorType(XmlAccessType.NONE)
 public class Train {
 
     static DateTimeFormatter DATA_FORMAT = DateTimeFormatter.ofPattern("dd.MM.yyyy");

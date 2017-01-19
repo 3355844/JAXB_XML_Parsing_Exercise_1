@@ -8,13 +8,11 @@ public class TimeAdapter extends XmlAdapter <String, LocalTime>{
 
     @Override
     public LocalTime unmarshal(String stringTime) throws Exception {
-        System.out.println(stringTime);
         return LocalTime.parse(stringTime, Train.TIME_FORMATTER);
     }
 
     @Override
     public String marshal(LocalTime time) throws Exception {
-        System.out.println(time);
         return time.format(Train.TIME_FORMATTER);
     }
 }

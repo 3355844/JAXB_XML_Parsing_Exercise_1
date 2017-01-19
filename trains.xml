@@ -8,8 +8,26 @@
     </train>
     <train id="2">
         <from>Lviv</from>
-        <to>Donetsk</to>
+        <to>Mykolaiv</to>
         <date>19.12.2013</date>
         <departure>19:05</departure>
+    </train>
+    <train id="3">
+        <from>Chop</from>
+        <to>London</to>
+        <date>19.12.2013</date>
+        <departure>18:25</departure>
+    </train>
+    <train id="4">
+        <from>Poltava</from>
+        <to>Kyiv</to>
+        <date>19.12.2013</date>
+        <departure>07:10</departure>
+    </train>
+    <train id="5">
+        <from>Ternopil</from>
+        <to>Rivne</to>
+        <date>19.12.2013</date>
+        <departure>13:15</departure>
     </train>
 </trains>
