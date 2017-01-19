@@ -13,6 +13,7 @@ public class Trains {
     public void add(Train train) {
         trains.add(train);
     }
+
     @XmlElement(name = "train")
     public ArrayList<Train> getTrains() {
         return trains;

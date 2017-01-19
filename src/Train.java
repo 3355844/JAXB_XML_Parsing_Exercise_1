@@ -84,6 +84,6 @@ public class Train {
                 ", to='" + to + '\'' +
                 ", date=" + date +
                 ", departure=" + departure +
-                '}'+"\n";
+                '}' + "\n";
     }
 }
