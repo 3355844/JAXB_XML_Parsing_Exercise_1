@@ -7,14 +7,14 @@ import java.time.LocalDate;
 public class DataAdapter extends XmlAdapter<String , LocalDate> {
 
     @Override
-    public LocalDate unmarshal(String s) throws Exception {
-        System.out.println(s);
-        return LocalDate.parse(s, Train.DATA_FORMAT) ;
+    public LocalDate unmarshal(String stringDate) throws Exception {
+        System.out.println(stringDate);
+        return LocalDate.parse(stringDate, Train.DATA_FORMAT) ;
     }
 
     @Override
-    public String marshal(LocalDate d) throws Exception {
-        System.out.println(d);
-        return d.format(Train.DATA_FORMAT);
+    public String marshal(LocalDate date) throws Exception {
+        System.out.println(date);
+        return date.format(Train.DATA_FORMAT);
     }
 }
